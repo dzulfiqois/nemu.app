@@ -1,0 +1,560 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav {
+  height: 12.5vh;
+  width: 100%;
+  position: fixed;
+
+  background-color: #fcfcfc;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* box-shadow: 0 1px 15px; */
+}
+
+.navleft {
+  display: flex;
+  align-items: center;
+  margin: 5vw;
+}
+
+.navleft h1 {
+  margin-left: 1rem;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  color: #0b132a;
+}
+
+.navright {
+  display: flex;
+  align-items: center;
+  margin: 5vw;
+}
+
+#signup-button a {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  color: #f15b2d;
+  border-radius: 3rem;
+  margin-right: 1.25rem;
+}
+
+#login-button a {
+  padding: 0.5rem 2rem;
+  color: #fcfcfc;
+  border-radius: 3rem;
+  box-shadow: 0px 3px 8px -2px #f15b2d;
+  background-image: linear-gradient(#db2542, #f15b2d);
+}
+
+.navmid {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navmid ul {
+  display: flex;
+}
+
+.navmid ul li a {
+  color: #4f5665;
+
+  /*jarak antar button*/
+  padding: 1rem;
+  margin: 1.5rem;
+}
+
+.hamburgerbutton {
+  display: none;
+}
+
+main {
+  width: 100%;
+  padding-top: 12.5vh;
+}
+
+.hero {
+  /* border: 1px solid; */
+  height: 87.5vh;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.heroleft {
+  width: 40vw;
+  height: 35vh;
+  margin: 5vh 0vw 7.5vh 5vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.heroleft h1 {
+  width: 400px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.heroleft h1 span {
+  background: linear-gradient(to right, #db2542 0%, #f15b2d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.heroleft p {
+  letter-spacing: 1px;
+  margin-top: 0.5rem;
+  width: 550px;
+}
+
+.hero-button {
+  display: flex;
+  margin-left: 1rem;
+}
+
+#googleplay-button {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #0b132a;
+  margin: 0.5rem;
+  color: #fcfcfc;
+}
+
+#googleplay-button object {
+  margin: 0 15px;
+}
+
+#getstarted-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #fcfcfc;
+  color: #f15b2d;
+  border: 2px #f15b2d solid;
+  transition: ease-in-out 0.2s;
+
+  margin: 0.5rem;
+
+  font-weight: 600;
+}
+
+#getstarted-button:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #fcfcfc;
+  color: #f15b2d;
+  border: 2px #f15b2d solid;
+  margin: 0.5rem;
+
+  box-shadow: 1px 1px 10px 2px #f15b2d;
+
+  transition: ease-out 0.25s;
+
+  font-weight: 600;
+}
+
+/* hover button */
+
+.heroright {
+  /* border: 1px solid; */
+  width: 45vw;
+  height: 75vh;
+  margin: 5vh 5vw 7.5vh 0vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* terakhir benerin layout hero.
+
+100 - 12.5 = 87.5
+
+87.5 - 7.5 - 5 = 75 */
+
+#info {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#infoleft {
+  margin: 0 10vw;
+  height: 75vh;
+  width: 40vw;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(241, 91, 45, 0.5) 0%,
+    rgba(223, 0, 14, 0) 100%
+  );
+  border-radius: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#inforight {
+  margin-right: 10vw;
+  /* border: 1px solid; */
+  width: 35vw;
+  height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 100%;
+  border: 0.5px solid #fce4e4;
+  height: 20vh;
+  border-radius: 15px;
+
+  display: flex;
+  align-items: center;
+}
+
+.card:hover {
+  width: 100%;
+  border: 0.5px solid #fce4e4;
+  height: 20vh;
+  border-radius: 15px;
+
+  display: flex;
+  align-items: center;
+}
+
+#review {
+  width: 100%;
+  height: 80vh;
+  /* border: 1px solid; */
+}
+
+.title-review {
+  padding-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#review-title {
+  width: 400px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#review-subtitle {
+  margin-top: 1em;
+  width: 550px;
+  text-align: center;
+}
+
+#user-review-listview {
+  /* border: 1px solid; */
+  height: max-content;
+  margin: 5vh 5vw;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+#user-review-card {
+  margin: 3vh 0;
+  height: 25vh;
+  width: 27vw;
+  border: 1px solid #f53838;
+  border-radius: 10px;
+
+  text-align: justify;
+  padding: 3vh 2vw;
+  transition: 0.3s;
+}
+
+#user-review-card:hover {
+  transition: 0.3s;
+  box-shadow: 0 1px 5px 1px #f15b2d;
+}
+
+#user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+.user-info-detail {
+  margin-left: 1vw;
+}
+
+footer {
+  width: 100%;
+  height: 70vh;
+  /* border: 1px solid; */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footerleft {
+  width: 25vw;
+  height: 30vh;
+
+  /* border: 1px solid; */
+
+  margin: 0 0 0 5vw;
+}
+
+#footerleft h1,
+p,
+#socmed {
+  margin: 1rem 0;
+}
+
+#footerright {
+  width: 40vw;
+  height: 30vh;
+  /* border: 1px solid; */
+
+  margin-right: 5vw;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+#subfooter1 {
+  display: flex;
+  flex-direction: column;
+}
+
+#subfooter1 h3 {
+  margin-bottom: 5vh;
+}
+
+#subfooter1 a {
+  margin-bottom: 2vh;
+  color: #4f5665;
+}
+
+#subfooter2 {
+  display: flex;
+  flex-direction: column;
+}
+
+#subfooter2 h3 {
+  margin-bottom: 5vh;
+}
+
+#subfooter2 a {
+  margin-bottom: 2vh;
+
+  color: #4f5665;
+}
+
+@media screen and (min-width: 300px) and (max-width: 426px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  nav {
+    display: none;
+    height: 10vh;
+  }
+
+  main {
+    width: 100vw;
+  }
+
+  /* hero */
+
+  .hero {
+    /* border: 1px solid; */
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .heroleft {
+    display: flex;
+    width: 100%;
+    height: 40%;
+    margin: 0;
+  }
+
+  .hero-desc h1 {
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .hero-desc p {
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .hero-button {
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #googleplay-button {
+    font-size: 0.75rem;
+  }
+
+  #googleplay-button:hover {
+    font-size: 0.75rem;
+    /* display: none; */
+  }
+
+  .heroright {
+    margin: 0;
+    display: flex;
+    width: 100%;
+    height: 40%;
+  }
+
+  .heroright object {
+    max-width: 50vw;
+  }
+
+  /* hero-end */
+
+  /* info */
+  #info {
+    margin: 0;
+    /* border: 1px solid; */
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  #infoleft {
+    /* border: 1px solid; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 40%;
+  }
+
+  #infoleft object {
+    max-width: 50%;
+  }
+
+  #inforight {
+    /* border: 1px solid; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 50%;
+  }
+
+  .card {
+    margin-top: 10px;
+    padding: 5px;
+    width: 85%;
+    /* border: 1px solid; */
+    font-size: 0.75rem;
+  }
+  .card:hover {
+    margin-top: 10px;
+    padding: 5px;
+    width: 85%;
+    /* border: 1px solid; */
+    font-size: 0.75rem;
+  }
+  /* info-end */
+
+  /* review */
+
+#review *{
+    /* border: 1px solid; */
+}
+
+.title-review h1{
+
+}
+
+.title-review p{
+    max-width: 100%;
+    font-size: 1rem;
+}
+
+#user-review-listview{
+    display: flex;
+    flex-direction: column;
+}
+
+#user-review-card{
+    width: 100%;
+    height: fit-content;
+}
+
+
+  /* review-end */
+
+  /* footer */
+
+  footer{
+    margin: 125% 0 0 0;
+    /* border: 1px solid; */
+
+    /* display: flex; */
+    flex-direction: column;
+  }
+
+  #footerleft{
+    margin: 0;
+    /* border: 1px solid; */
+    width: 90%;
+  }
+
+  #footerright{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 410%;
+    left: 5%;
+}
+
+/* footer-end */
+}
